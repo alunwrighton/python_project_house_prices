@@ -5,6 +5,7 @@
 from data_file_reader import *
 from stat_analysis import *
 import statistics
+from math import sqrt
 
 
 worksheet1 = DataFileReader("house_price_data.xlsx")
@@ -64,7 +65,7 @@ print("The list of house price values on their own (without years attached) is a
 
 standard_deviation = statistics.stdev(li)
 
-print("The standard deviation of the house price is: " + str(standard_deviation))
+print("The standard deviation of the house price is: " + str(sqrt(standard_deviation)))
 
 # top 10
 
